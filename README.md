@@ -17,3 +17,17 @@ Dockerize Challenge B. Write a docker file so that it reads the output from Chal
 A as an Input. Once this container is started, the program in challenge B is executed
 to process this file. The output should be saved in a file and should be exposed to
 the Docker host machine.
+
+
+## Solution A
+- install node.js
+- run the script "node challengeA.js"
+
+## Solution B
+- install node.js
+- run the script "node challengeB.js"
+
+## Solution C
+- install docker desktop
+- run the following command to build the docker image from the Dockerfile "docker build -t challenge-b"
+- run following command to run start the container, process the file and save the output "docker run -v $(pwd)/output:/app/output challenge-b"
